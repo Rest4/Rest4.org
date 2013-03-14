@@ -1,0 +1,8 @@
+title=Testing english homepage
+request.method=GET
+request.uri=home/en-US/index.html
+request.headers.!.name=Accept
+request.headers.*.value=text/html
+response.code=200
+response.headers.!.name=Content-Type
+response.headers.*.value=text/html

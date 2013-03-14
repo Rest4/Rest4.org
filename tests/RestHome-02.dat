@@ -1,0 +1,8 @@
+title=Testing french homepage
+request.method=GET
+request.uri=home/fr-FR/index.html
+request.headers.!.name=Accept
+request.headers.*.value=text/html
+response.code=200
+response.headers.!.name=Content-Type
+response.headers.*.value=text/html

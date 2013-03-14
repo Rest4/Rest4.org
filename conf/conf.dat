@@ -1,0 +1,30 @@
+# Main
+server.domain=rest4.org
+server.protocol=http
+server.name=Rest4
+server.home=home
+server.cache=
+server.auth=default
+# Unix
+unix.user=rest4
+unix.group=www-users
+unix.path=/home/rest4/website
+# Auth
+auth.webmaster.id=1
+auth.webmaster.group=1
+auth.webmaster.pass=pass
+auth.webmaster.rights.+.path=/fs/sandbox/(.*)
+auth.webmaster.rights.*.methods=OPTIONS,GET,PUT,POST,DELETE
+auth.webmaster.rights.+.path=/(slow|uri)(.*)
+auth.webmaster.rights.*.methods=OPTIONS,GET
+auth.public.id=0
+auth.public.group=0
+auth.public.rights.+.path=/(home|mpfsi|mpfs|mmpfsi|mmpfs|fsi|fs|http|feed|favicon)(.*)
+auth.public.rights.*.methods=OPTIONS,GET
+auth.public.rights.+.path=/home/(.*)
+auth.public.rights.*.methods=POST
+auth.public.rights.+.path=/bug.dat
+auth.public.rights.*.methods=POST
+auth.public.rights.+.path=/github/nfroidure/(.*)
+auth.public.rights.*.methods=OPTIONS,GET
+

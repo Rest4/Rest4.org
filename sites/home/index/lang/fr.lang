@@ -1,0 +1,13 @@
+title=Rest4 : Framework PHP compatible REST
+contents.!.text=Les applications seront compatibles REST ou ne seront pas. REST4 offre aux développeurs PHP une base solide pour construire des services et applications web modernes.
+contents.+.subtitle=Fonctionnalités
+contents.+.text=REST4 embarque un bon nombre de pilotes correspondant aux besoins récurrents des développeurs :
+contents.+.list.!.text=Pilote de système de fichiers (fs, fsi, mpfs, mpfsi, mmpfs, mmpfsi)
+contents.*.list.+.text=Pilote MySQL (db,sql)
+contents.*.list.+.text=Pilote d'authentification (basic,digest,session)
+contents.*.list.+.text=Pilotes de caches (xcache et bientôt apc, memcached et fs)
+contents.*.list.+.text=Outils de debogage (slow,uri,bug)
+contents.+.subtitle=Utilisateurs
+contents.+.text=REST4 est actuellement utilisé par quelques entreprises :
+contents.+.list.!.text=Vigisystem par Ecogom SARL : Un système de gestion de maintenance et de contrôle des installations.
+contents.*.list.+.text=Ewkcrm par Elitwork SARL : Un système de gestion de la relation client.
