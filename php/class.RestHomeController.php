@@ -7,6 +7,6 @@ class RestHomeController extends RestSiteController
 		parent::__construct($request);
 		}
 	}
-RestHomeController::$ctrInf=new xcDataObject();
+RestHomeController::$ctrInf=new stdClass();
 RestHomeController::$ctrInf->description='Home';
 ?>
