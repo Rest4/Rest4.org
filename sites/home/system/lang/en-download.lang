@@ -1,2 +1,5 @@
 title=Download
-contents.+.text=Get the development version of Rest4 and help us to push next stable version of Rest4.
+contents.!.text=Get the development version of Rest4 and help us to push next stable version of Rest4.
+contents.*.text_link=Git repository
+contents.*.text_link_tx=Fork the project on GitHub
+contents.*.text_link_href=https://github.com/nfroidure/Rest4

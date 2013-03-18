@@ -1,2 +1,6 @@
 title=Télécharger
-contents.+.text=Obtenez la version de développement de Rest4 avant sa publication et aidez-nous à proposer une version stable de Rest4.
+contents.!.text=Obtenez la version de développement de Rest4 avant sa publication et aidez-nous à proposer une version stable de Rest4.
+contents.*.text_link=Dépôt Git
+contents.*.text_link_tx=Voir le dépôt du projet sur GitHub
+contents.*.text_link_href=https://github.com/nfroidure/Rest4
+contents.*.text_link_hreflang=en
