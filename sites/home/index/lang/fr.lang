@@ -11,3 +11,12 @@ contents.+.subtitle=Utilisateurs
 contents.+.text=REST4 est actuellement utilisé par quelques entreprises :
 contents.+.list.!.text=Vigisystem par Ecogom SARL : Un système de gestion de maintenance et de contrôle des installations.
 contents.*.list.+.text=Ewkcrm par Elitwork SARL : Un système de gestion de la relation client.
+contents.+.subtitle=Diagramme des classes
+contents.+.image.src=/mpfs/public/images/schemas/Rest4ClassesDiagram.png
+contents.*.image.alt=Diagramme des classes de Rest4
+contents.*.text=REST4 est développé en toute transparence pour une meilleure vision de l'avancée du projet.
+contents.*.image.href=/mpfs/public/images/schemas/Rest4ClassesDiagram.png
+contents.*.image.title=Voir le diagramme des classes en taille réelle
+contents.*.image.rel=lightbox
+contents.+.text=Sur ce diagramme, vous pouvez visualiser en un clin d'oeil l'architecture de REST4 qui est \
+pensée pour épouser l'architecture du protocole HTTP.
