@@ -7,7 +7,7 @@ site.index=index
 site.gatrack=UA-21477946-8
 # Configuration
 # Document
-document.links.+.url=/mpfs/public/images/doc/favicon.png
+document.links.+.url=/mpfs/public/images/favicon.png
 document.links.*.type=image/png
 document.links.*.rel=icon
 document.links.+.url=/mpfs/public/css/doc/screen.css

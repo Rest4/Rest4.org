@@ -2,7 +2,7 @@
 class RestHomeDefaultDriver extends RestSiteDriver
 	{
 	static $drvInf;
-	static function getDrvInf()
+	static function getDrvInf($method=0)
 		{
 		$drvInf=new stdClass();
 		$drvInf->name='Home: Deafault Driver';
