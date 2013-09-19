@@ -3,28 +3,35 @@ server.domain=rest4.org
 server.protocol=http
 server.name=Rest4
 server.home=home
-server.cache=
-server.auth=default
+
+# Cache
+cache.type=xcache
+cache.prefix=Rest4-org
+
 # Unix
 unix.user=rest4
 unix.group=www-users
 unix.path=/home/rest4/website
-# Auth
-auth.webmaster.id=1
-auth.webmaster.group=1
-auth.webmaster.pass=pass
-auth.webmaster.rights.+.path=/fs/sandbox/(.*)
-auth.webmaster.rights.*.methods=OPTIONS,GET,PUT,POST,DELETE
-auth.webmaster.rights.+.path=/(slow|uri)(.*)
-auth.webmaster.rights.*.methods=OPTIONS,GET
-auth.public.id=0
-auth.public.group=0
-auth.public.rights.+.path=/(home|mpfsi|mpfs|mmpfsi|mmpfs|fsi|fs|http|feed|favicon)(.*)
-auth.public.rights.*.methods=OPTIONS,GET
-auth.public.rights.+.path=/home/(.*)
-auth.public.rights.*.methods=POST
-auth.public.rights.+.path=/bug.dat
-auth.public.rights.*.methods=POST
-auth.public.rights.+.path=/github/nfroidure/(.*)
-auth.public.rights.*.methods=OPTIONS,GET
+
+# Authentication
+auth.type=digest
+auth.realm=Rest4.org
+auth.source=conf
+auth.users.webmaster.id=1
+auth.users.webmaster.group=1
+auth.users.webmaster.pass=2b566f87c9c502e80f4900948552be82
+auth.users.webmaster.rights.+.path=/fs/sandbox/(.*)
+auth.users.webmaster.rights.*.methods=OPTIONS,GET,PUT,POST,DELETE
+auth.users.webmaster.rights.+.path=/(slow|uri)(.*)
+auth.users.webmaster.rights.*.methods=OPTIONS,GET
+auth.users.public.id=0
+auth.users.public.group=0
+auth.users.public.rights.+.path=/(home|mpfsi|mpfs|mmpfsi|mmpfs|fsi|fs|http|feed|favicon)(.*)
+auth.users.public.rights.*.methods=OPTIONS,GET
+auth.users.public.rights.+.path=/home/(.*)
+auth.users.public.rights.*.methods=POST
+auth.users.public.rights.+.path=/bug.dat
+auth.users.public.rights.*.methods=POST
+auth.users.public.rights.+.path=/github/nfroidure/(.*)
+auth.users.public.rights.*.methods=OPTIONS,GET
 
