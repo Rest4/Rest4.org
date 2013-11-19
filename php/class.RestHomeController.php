@@ -9,4 +9,4 @@ class RestHomeController extends RestSiteController
 	}
 RestHomeController::$ctrInf=new stdClass();
 RestHomeController::$ctrInf->description='Home';
-?>
+

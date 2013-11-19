@@ -5,7 +5,7 @@ class RestHomeDefaultDriver extends RestSiteDriver
 	static function getDrvInf($method=0)
 		{
 		$drvInf=new stdClass();
-		$drvInf->name='Home: Deafault Driver';
+		$drvInf->name='Home: Default Driver';
 		$drvInf->description='Try to run a default code if the specific driver doesn\'t exist.';
 		$drvInf->usage='/home/{user.i18n}/index.{document.type}';
 		$drvInf->methods=new stdClass();
@@ -20,10 +20,11 @@ class RestHomeDefaultDriver extends RestSiteDriver
 		$this->prepare();
 		$mainModule=new stdClass();
 		$node=strtolower($this->request->uriNodes[2]);
-		$mainModule->template=$this->loadSiteTemplate('/system/'.$this->core->document->type.'/content.tpl','mainModules.0',true);
+		$mainModule->template=$this->loadSiteTemplate('/system/'
+		  .$this->core->document->type.'/content.tpl','mainModules.0',true);
 		$this->loadSiteLocale($node,'','mainModules.0',true);
 		$this->core->mainModules->append($mainModule);
 		return $this->finish();
 		}
 	}
-RestHomeDefaultDriver::$drvInf=RestHomeDefaultDriver::getDrvInf();
+
